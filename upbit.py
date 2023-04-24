@@ -10,8 +10,8 @@ import pandas as pd
 from decimal import Decimal
 from urllib.parse import urlencode
 # Keys 업비트에서 키를 발급받아야함
-access_key = ''
-secret_key = ''
+access_key = 'QfT6ARi21I81wnUlWDnwFZMZXuD9LwfgvQktDxOD'
+secret_key = 'R7AMX1DbpxgF5NAdlo2ObaqiBhkxSL8mBxPafp2t'
 server_url = 'https://api.upbit.com'
 
 # 로그 저장

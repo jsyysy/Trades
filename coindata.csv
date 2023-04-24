@@ -108,3 +108,47 @@
 [{'type': 'BTC', 'DT': '2023-04-24T11:14:00', 'PRICE': 37089000.0, 'RSI': 60.3195, 'MFI': 54.3047, 'MACD': 48642.8461, 'SIGNAL': 4830.5302, 'OCL': 43812.3159, 'BBH': 37116711.4561, 'BBM': 36827450.0, 'BBL': 36538188.5439}]
 [{'market': 'KRW-BTC', 'candle_date_time_utc': '2023-04-24T02:14:00', 'candle_date_time_kst': '2023-04-24T11:14:00', 'opening_price': 37072000.0, 'high_price': 37089000.0, 'low_price': 37050000.0, 'trade_price': 37089000.0, 'timestamp': 1682302478909, 'candle_acc_trade_price': 309180752.75904, 'candle_acc_trade_volume': 8.34126288, 'unit': 1}]
 [{'type': 'BTC', 'DT': '2023-04-24T11:14:00', 'PRICE': 37089000.0, 'RSI': 60.3195, 'MFI': 54.3047, 'MACD': 48642.8461, 'SIGNAL': 4830.5302, 'OCL': 43812.3159, 'BBH': 37116711.4561, 'BBM': 36827450.0, 'BBL': 36538188.5439}]
+시장가 매수 완료!
+{'uuid': '42313812-60af-419a-8fb2-a5762f274b4f', 'side': 'bid', 'ord_type': 'price', 'price': '10000', 'state': 'wait', 'market': 'KRW-BTC', 'created_at': '2023-04-24T17:52:44.801274+09:00', 'reserved_fee': '5', 'remaining_fee': '5', 'paid_fee': '0', 'locked': '10005', 'executed_volume': '0', 'trades_count': 0}
+시장가 매도 완료!
+{'uuid': '91395826-8133-4bf7-a507-bdbcd94a66e2', 'side': 'ask', 'ord_type': 'market', 'state': 'wait', 'market': 'KRW-BTC', 'created_at': '2023-04-24T17:52:45.001693+09:00', 'volume': '0.00027453', 'remaining_volume': '0.00027453', 'reserved_fee': '0', 'remaining_fee': '0', 'paid_fee': '0', 'locked': '0.00027453', 'executed_volume': '0', 'trades_count': 0}
+[{'market': 'KRW-BTC', 'candle_date_time_utc': '2023-04-24T08:52:00', 'candle_date_time_kst': '2023-04-24T17:52:00', 'opening_price': 36425000.0, 'high_price': 36429000.0, 'low_price': 36418000.0, 'trade_price': 36426000.0, 'timestamp': 1682326365067, 'candle_acc_trade_price': 165392820.73107, 'candle_acc_trade_volume': 4.54062874, 'unit': 1}]
+[{'type': 'BTC', 'DT': '2023-04-24T17:52:00', 'PRICE': 36418000.0, 'RSI': 29.5165, 'MFI': 26.8502, 'MACD': -54560.0211, 'SIGNAL': 5226.2836, 'OCL': -59786.3046, 'BBH': 37271981.2758, 'BBM': 36903150.0, 'BBL': 36534318.7242}]
+[{'market': 'KRW-BTC', 'candle_date_time_utc': '2023-04-24T08:52:00', 'candle_date_time_kst': '2023-04-24T17:52:00', 'opening_price': 36425000.0, 'high_price': 36429000.0, 'low_price': 36418000.0, 'trade_price': 36426000.0, 'timestamp': 1682326365409, 'candle_acc_trade_price': 167439961.93107, 'candle_acc_trade_volume': 4.59682874, 'unit': 1}]
+[{'type': 'BTC', 'DT': '2023-04-24T17:52:00', 'PRICE': 36426000.0, 'RSI': 29.5165, 'MFI': 26.8502, 'MACD': -54560.0211, 'SIGNAL': 5226.2836, 'OCL': -59786.3046, 'BBH': 37271981.2758, 'BBM': 36903150.0, 'BBL': 36534318.7242}]
+기타 에러:401
+401
+시장가 매수 완료!
+{'error': {'message': 'Failed to verify Jwt token.', 'name': 'jwt_verification'}}
+기타 에러:401
+401
+Exception 발생!
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Trades\For_Buy.py", line 16, in <module>
+    result = upbit.sellcoin_mp("KRW-BTC")
+  File "C:\Users\User\PycharmProjects\Trades\upbit.py", line 207, in sellcoin_mp
+    cur_balance = get_balance(target_item)
+  File "C:\Users\User\PycharmProjects\Trades\upbit.py", line 183, in get_balance
+    if myasset_for['currency'] == target_item.split('-')[1]:
+TypeError: string indices must be integers
+
+기타 에러:401
+401
+시장가 매수 완료!
+{'error': {'name': 'jwt_verification', 'message': 'Failed to verify Jwt token.'}}
+기타 에러:401
+401
+Exception 발생!
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Trades\For_Buy.py", line 16, in <module>
+    result = upbit.sellcoin_mp("KRW-BTC")
+  File "C:\Users\User\PycharmProjects\Trades\upbit.py", line 207, in sellcoin_mp
+    cur_balance = get_balance(target_item)
+  File "C:\Users\User\PycharmProjects\Trades\upbit.py", line 183, in get_balance
+    if myasset_for['currency'] == target_item.split('-')[1]:
+TypeError: string indices must be integers
+
+시장가 매수 완료!
+{'uuid': '93d131da-7be1-4941-b33e-719686d3bfc5', 'side': 'bid', 'ord_type': 'price', 'price': '10000', 'state': 'wait', 'market': 'KRW-BTC', 'created_at': '2023-04-24T21:41:11.503078+09:00', 'reserved_fee': '5', 'remaining_fee': '5', 'paid_fee': '0', 'locked': '10005', 'executed_volume': '0', 'trades_count': 0}
+시장가 매도 완료!
+{'uuid': '19579965-a25f-4b32-8581-ea74895b1638', 'side': 'ask', 'ord_type': 'market', 'state': 'wait', 'market': 'KRW-BTC', 'created_at': '2023-04-24T21:41:11.707624+09:00', 'volume': '0.00027317', 'remaining_volume': '0.00027317', 'reserved_fee': '0', 'remaining_fee': '0', 'paid_fee': '0', 'locked': '0.00027317', 'executed_volume': '0', 'trades_count': 0}
