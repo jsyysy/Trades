@@ -552,7 +552,7 @@ while True:
         datalogger.info(Coin_Data)
 
         if start_time < now < end_time - datetime.timedelta(seconds=10):
-            print("yes")
+            print("****프로그램 실행중****")
         else:
             btc = upbit.get_balance()
         time.sleep(1)
